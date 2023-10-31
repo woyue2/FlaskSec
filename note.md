@@ -7,7 +7,11 @@ conda install flask-sqlalchemy
 
 flask shell
 db.create_all()
-
+或者
+python3
+from xx import app,db
+app.app_context.push()
+db.create_all()
 
     pip list
     pip freeze > requirements_20211206.txt        #导出当前环境所有的依赖包及其对应的版本号
